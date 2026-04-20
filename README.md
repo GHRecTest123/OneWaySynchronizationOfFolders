@@ -17,7 +17,7 @@ If there is literally no action conducted on any file during one of the synchron
 
 
 >[!NOTE]
->The synchronization process in conducted only on the files. If there are some additional subfolders in the original folder, they won't be copied onto the destination folder. Same applies to the content of those subfolders.
+>The synchronization process is conducted only on the files. If there are some additional subfolders in the original folder, they won't be copied onto the destination folder. Same applies to the content of those subfolders.
 >
 >**Example:**
 >
