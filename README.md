@@ -55,8 +55,6 @@ Once you're done, the folder you cloned this repository into should look like th
 1. Open the folder you cloned this repository into.
 2. Go straight to `path_to_the_folder_with_cloned_repo\OneWaySynchronizationOfFolders\OneWaySynchronizationOfFolders\OneWaySynchronizationOfFolders`. Once you do it, you should be seeing these files: <img width="736" height="400" alt="howtorunit1" src="https://github.com/user-attachments/assets/14f1433d-fcf0-4e69-892f-e6db256362b9" />
 
-
-
 3. Launch CMD in this folder.
 4. Once you're in CMD, run the following command:
    ```
@@ -71,6 +69,12 @@ b) `path_to_destination_folder` - path that leads directly to the folder which i
 c) `path_to_logging_folder` - path that leads directly to the folder in which log files are going to be kept. Please provide the existing path, otherwise a proper exception will be thrown.
 
 d) `synchronizationFrequency` - frequency with which the synchronization is conducted. It's expressed in milliseconds. When one synchronization is over, another one gets started when the amount of time expressed in this variable passes, and so on until the code is terminated. Please provide a non-negative value, otherwise a proper exception will be thrown. If `0` is provided, then the synchronization goes on indefinitely without a break.
+
+>[!IMPORTANT]
+> **Example:**
+> ```
+> dotnet run "D:\originalFolder" "D:\destinationFolder" "D:\loggingFolder" 60000
+> ```
 
 >[!WARNING]
 >If `dotnet run` is not recognized by your CMD, you probably need to install .NET SDK.
